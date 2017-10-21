@@ -13,6 +13,8 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // dictionary to pair UIColors with names, because you can't get the name from a color 😔
     let colors: [(UIColor, String)] = [(.red, "red"), (.orange, "orange"), (.yellow, "yellow"), (.green, "green"), (.blue, "blue"), (.purple, "purple"), (.brown, "brown")]
 
+    @IBOutlet weak var colorsTableView: UITableView!
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -20,14 +22,14 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colors.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
         cell.backgroundColor = colors[indexPath.row].0
         cell.textLabel?.text = colors[indexPath.row].1
+        cell.selectionStyle = .none
         return cell
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +39,11 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? ColorDetailViewController,
+           let row = colorsTableView.indexPathForSelectedRow?.row {
+            destination.color = colors[row]
+        }
     }
-    */
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63682D151F9B89580064B54E /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63682D141F9B89580064B54E /* ColorDetailViewController.swift */; };
 		63DC6E811F98F92700FF2A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DC6E801F98F92700FF2A35 /* AppDelegate.swift */; };
 		63DC6E861F98F92700FF2A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DC6E841F98F92700FF2A35 /* Main.storyboard */; };
 		63DC6E881F98F92700FF2A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DC6E871F98F92700FF2A35 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63682D141F9B89580064B54E /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 		63DC6E7D1F98F92600FF2A35 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DC6E801F98F92700FF2A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DC6E851F98F92700FF2A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				63DC6E801F98F92700FF2A35 /* AppDelegate.swift */,
 				63DC6E941F9906F200FF2A35 /* ColorsViewController.swift */,
+				63682D141F9B89580064B54E /* ColorDetailViewController.swift */,
 				63DC6E841F98F92700FF2A35 /* Main.storyboard */,
 				63DC6E871F98F92700FF2A35 /* Assets.xcassets */,
 				63DC6E891F98F92700FF2A35 /* LaunchScreen.storyboard */,
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63DC6E781F98F92600FF2A35 /* Build configuration list for PBXProject "Colors" */;
+			buildConfigurationList = 63DC6E781F98F92600FF2A35 /* Build configuration list for PBXProject "ColorsWithNavigation" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63682D151F9B89580064B54E /* ColorDetailViewController.swift in Sources */,
 				63DC6E951F9906F200FF2A35 /* ColorsViewController.swift in Sources */,
 				63DC6E811F98F92700FF2A35 /* AppDelegate.swift in Sources */,
 			);
@@ -273,8 +277,8 @@
 		63DC6E901F98F92700FF2A35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Colors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Skinnerh.Colors;
@@ -287,8 +291,8 @@
 		63DC6E911F98F92700FF2A35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Colors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Skinnerh.Colors;
@@ -301,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63DC6E781F98F92600FF2A35 /* Build configuration list for PBXProject "Colors" */ = {
+		63DC6E781F98F92600FF2A35 /* Build configuration list for PBXProject "ColorsWithNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63DC6E8D1F98F92700FF2A35 /* Debug */,
